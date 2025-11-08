@@ -3,70 +3,53 @@ import Navbar from "./Component/Share/Navbar";
 import HeroSection from "./Home/HeroSection";
 import Contact from "./Home/Contact";
 import Footer from "./Component/Share/Footer";
-
 import Review from "./Home/Review";
 import About from "./Home/About";
 import SampleVideo from "./Home/SampleVideo";
 import Shop from "./Home/Shop";
 import Faq from "./Home/Faq";
 
-
 export default function Layout() {
   return (
-    <div>
-      <div className="w-full bg-white relative text-gray-800">
-        {/* Concentric Squares - Light Pattern */}
-        <div
-          className="absolute inset-0 z-0 pointer-events-none"
-          style={{
-            backgroundImage: `
-        repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
-        repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
-        repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px),
-        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px)
-      `,
-          }}
-        />
+    <div className="w-full bg-[#f8fafc] relative">
 
-        {/* content here */}
+      {/* Top Fade Grid Background */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `
+          linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+          linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
+        `,
+          backgroundSize: "20px 30px",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
+          maskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
+        }}
+      />
 
-        <div className="relative z-[2]">
-          <div>
-            <Top_Navbar></Top_Navbar>
-          </div>
+      {/* Your Content/Components */}
+      <div className="relative z-[2]">
+        <Top_Navbar />
 
-          <div className="mt-11 ">
-            <Navbar></Navbar>
-          </div>
-
-          <div>
-            <HeroSection></HeroSection>
-          </div>
-
-          <div className="container m-auto px-4 pb-16">
-
-            <Shop></Shop>
-
-            <About></About>
-
-            <Review></Review>
-
-            <SampleVideo></SampleVideo>
-
-            <Faq></Faq>
-
-            <Contact></Contact>
-
-            <Footer></Footer>
-          </div>
-
+        <div className="mt-11">
+          <Navbar />
         </div>
+
+        <HeroSection />
+
+        <div className="container m-auto px-4 pb-16">
+          <Shop />
+          <About />
+          <Review />
+          <SampleVideo />
+          <Faq />
+          <Contact />
+        </div>
+
+        <Footer />
       </div>
     </div>
   );
 }
-
-{
-  /* content here */
-}
-

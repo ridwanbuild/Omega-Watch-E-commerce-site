@@ -40,12 +40,15 @@ export function Para({ para, className }) {
   );
 }
 
+
+
+
 export function Btn({ btn, icon, className }) {
   return (
     <div
-      className={`btn bg-[var(--primaryColor)] text-[var(--lightColor)] ${className}`}
+      className={`${className}`}
     >
-      <button className="uppercase">{btn}</button>
+      <button className="">{btn}</button>
       {icon && <span className="text-base animate-pulse">{icon}</span>}
     </div>
   );

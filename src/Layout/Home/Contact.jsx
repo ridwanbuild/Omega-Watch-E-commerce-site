@@ -57,7 +57,7 @@ export default function Contact() {
 
         {/* Button */}
         <div className="py-7 w-full flex items-center justify-center">
-          <Btn btn="Send Message" className={'bg-[var(--primaryColor)]  text-white! '}/>
+          <Btn btn="Send Message" className={'bg-[var(--primaryColor)] py-3 px-5 rounded-md text-white! '}/>
         </div>
 
       </form>
