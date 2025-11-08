@@ -15,7 +15,7 @@ This landing page highlights featured products, customer testimonials, company h
 ## 🔗 Live Preview
 
 Live Website Link :  
-https://watch-e-commerce-site-landing-page.netlify.app
+https://omega-watch-e-commerce-site.netlify.app
 
 
 ## 📸 Screenshot
