@@ -12,9 +12,14 @@ This landing page highlights featured products, customer testimonials, company h
 
 ---
 
-## 📸 Screenshot
+## 🔗 Live Preview
 
-![Omega Watch Landing Page](./77f0f540-2714-4343-b443-86cd94e3a1bc.png)
+Live Website Link :  
+https://watch-e-commerce-site-landing-page.netlify.app
+
+
+## 📸 Screenshot
+https://i.ibb.co.com/p69P6Nbh/screencapture-omega-watch-e-commerce-site-netlify-app-2025-11-08-10-54-39.png
 
 ---
 
